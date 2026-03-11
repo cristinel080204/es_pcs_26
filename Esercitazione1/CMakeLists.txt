@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.20)
+project(esercitazione1)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wshadow -Werror=vla")
+
+set(SOURCES_PROG1 prog.cpp)
+add_executable(prog ${SOURCES_PROG1})
+set(SOURCES_PROG2 media_t.cpp)
+add_executable(calcolo_media ${SOURCES_PROG2})
